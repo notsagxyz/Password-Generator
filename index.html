@@ -13,23 +13,23 @@
 
     <div class="Caja">
 
-        <h1>Generador de Contraseñas</h1>
+        <h1>Password Generator</h1>
 
-        <label for="largo">Longitud de la contraseña:</label><br>
-        <input type="number" id="largo" min="6" max="20" value="10" required>
+        <label for="largo">Password length:</label><br>
+        <input type="number" id="length" min="6" max="20" value="10" required>
 
         <div>
-            <input type="checkbox" id="numeros">
-            <label for="numeros">Incluir números</label>
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Include numbers</label>
         </div>
         
         <div>
-            <input type="checkbox" id="simbolos">
-            <label for="simbolos">Incluir símbolos</label>
+            <input type="checkbox" id="symbols">
+            <label for="symbols">Include symbols</label>
         </div>
 
-        <button onclick="generatePassword()">Generar Contraseña</button>
-        <p>Contraseña generada: <span id="password"></span></p>
+        <button onclick="generatePassword()">Generate Password</button>
+        <p>Generated password: <span id="password"></span></p>
 
         <script src="script.js"></script>
 
