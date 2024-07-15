@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">
+    <title>Password Gen</title>
+</head>
+<body>
+
+    <div class="Caja">
+
+        <h1>Generador de Contraseñas</h1>
+
+        <label for="largo">Longitud de la contraseña:</label><br>
+        <input type="number" id="largo" min="6" max="20" value="10" required>
+
+        <div>
+            <input type="checkbox" id="numeros">
+            <label for="numeros">Incluir números</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="simbolos">
+            <label for="simbolos">Incluir símbolos</label>
+        </div>
+
+        <button onclick="generatePassword()">Generar Contraseña</button>
+        <p>Contraseña generada: <span id="password"></span></p>
+
+        <script src="script.js"></script>
+
+    </div>
+
+
+
+</body>
+</html>
