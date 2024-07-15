@@ -1,4 +1,4 @@
-# Password Generator with JS
+# **Try [Password Generator with JS](https://ntsg-hub.github.io/passgenjs/)**
 
 Simple random password generator with symbols or numbers
 
