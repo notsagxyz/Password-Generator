@@ -1,35 +1,35 @@
 function generatePassword(){
-    const length = document.getElementById('largo').value;
+    const length = document.getElementById('length').value;
 
     if (length < 6) {
-        alert('La longitud de la contraseña debe ser al menos de 6 caracteres.');
+        alert('Password length must be at least 6 characters.');
         return;
     }
 
     if (length > 20) {
-        alert('La longitud de la contraseña debe ser de maximo 20 caracteres.');
+        alert('Password length can be maximum 20 characters.');
         return;
     }
 
-    const letras = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const numeros = '0123456789';
-    const simbolos = '!@#$%^&*()+~?><-=';
+    const letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const numbers = '0123456789';
+    const symbols = '!@#$%^&*()+~?><-=';
     
-    let charset = letras;
+    let charset = letters;
 
     /* */
 
-    if (document.getElementById('numeros').checked) {
-        charset += numeros;
+    if (document.getElementById('numbers').checked) {
+        charset += numbers;
     }
-    if (document.getElementById('simbolos').checked) {
-        charset += simbolos;
+    if (document.getElementById('symbols').checked) {
+        charset += symbols;
     }
 
     /* */
 
 
-    let password = ''; /* variable password vacia */
+    let password = ''; 
 
     for (let i = 0; i < length; i++) {
         const randomIndex = Math.floor(Math.random() * charset.length);
