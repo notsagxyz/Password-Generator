@@ -24,9 +24,12 @@ body {
 .Caja {
     background-color: #4c504bfd;
     padding: 30px;
-    width: 25%;
+    width: 80%;
+    max-width: 500px;
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .Caja h1 {
