@@ -2,17 +2,10 @@
     font-family: 'Roboto Mono', monospace;
 }
 
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 body {
     color: #fff;
     background: linear-gradient(to right, #1f2731, rgb(10, 53, 31)); 
     background-size: 200% auto;
-    animation: gradientAnimation 10s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
